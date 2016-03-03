@@ -1,10 +1,7 @@
 #!/usr/bin/env ruby
-
 require 'digest'
 
 PUZZLE_INPUT = 'bgvyzdsv'
-
-md5 = Digest::MD5.new
 
 mine_index = 0
 mine_hex = ""
