@@ -11,8 +11,7 @@ mine_hex = ""
 
 loop do
     mine_index += 1
-    md5 << PUZZLE_INPUT + mine_index.to_s
-    mine_hex = md5.hexdigest
+    mine_hex = Digest::MD5.hexdigest(PUZZLE_INPUT + mine_index.to_s)
     break if mine_hex.start_with?('00000')
 end
 
