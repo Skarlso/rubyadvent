@@ -12,6 +12,13 @@ def no_candy(name)
   return name =~ /^(?:(?!ab|cd|pq|xy).)+$/
 end
 
-puts double_trouble 'hgjeekdkai'
-puts three_vowels 'hgjekdka'
-puts no_candy 'dfgabdf'
+file = "input.txt"
+nice = 0
+
+File.readlines(file).each do |line|
+  if no_candy(line) != nil && double_trouble(line) != nil && three_vowels(line) != nil
+    nice += 1
+  end
+end
+
+puts nice
