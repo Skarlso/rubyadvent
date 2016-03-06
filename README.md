@@ -1,2 +1,2 @@
 # rubyadvent
-Advent of Code problems in ruby
+Advent of Code problems implemented in ruby.
