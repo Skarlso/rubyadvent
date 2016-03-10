@@ -6,3 +6,5 @@ grid = Array.new
   grid[x] = Array.new(1000, false)
 end
 
+File.readlines(file).each do |line|
+end
