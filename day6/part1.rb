@@ -7,4 +7,6 @@ grid = Array.new
 end
 
 File.readlines(file).each do |line|
+  split = line.split(' ')
+  
 end
